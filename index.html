@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Ecommerce Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- MOBILE NAV ICONS -->
+          <div class="logo-top">
+            <img class="logo" src="/images/logo.svg" alt="" />
+          </div>
+          <img class="hamburger" src="/images/icon-menu.svg" alt="" />
+          <img class="cart-top" src="/images/icon-cart.svg" alt="" />
+          <img class="mobile-avatar" src="images/image-avatar.png" alt="" />
+
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- MOBILE NAVBAR -->
+        <nav class="mobile-nav">
+          <img class="close-bar" src="/images/icon-close.svg" alt="" />
+          <ul>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon1">
+          <img class="cart-icon" src="images/icon-cart.svg" alt="" />
+        </div>
+        <div class="user-account">
+          <img class="image-avatar" src="images/image-avatar.png" alt="" />
+        </div>
+      </nav>
+      <div class="outline"></div>
+    </header>
+    <section class="first">
+      <img class="image-product-1" src="images/image-product-1.jpg" alt="" />
+      <div class="btns">
+        <img class="btn-prev" src="/images/icon-previous.svg" alt="" />
+        <img class="btn-next" src="/images/icon-next.svg" alt="" />
+      </div>
+      <div class="content">
+        <p class="hero">Sneaker Company</p>
+        <h1>
+          Fall Limited Edition <br />
+          Sneakers
+        </h1>
+        <p class="profile">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="money">
+          <span class="price"> $125.00</span>
+          <span class="discount">50% </span>
+          <p class="two-fifty">$250.00</p>
+          <span class="cross-line"></span>
+        </div>
+        <div class="symbols">
+          <img class="minus" src="images/icon-minus.svg" alt="" id="minus" />
+          <span class="val" id="val"> <b>0</b> </span>
+          <img
+            class="plus"
+            src="images/icon-plus.svg"
+            alt=""
+            id="plus
+          "
+          />
+          <div class="cart-click">
+            <button class="cart-box">Add to cart</button>
+            <img class="cart-icon2" src="/images/icon-cart.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="second">
+      <div class="image-product">
+        <img
+          class="image-product1"
+          src="images/image-product-1.jpg"
+          alt=""
+          onclick="showImage(this.src)"
+        />
+
+        <img
+          class="image-product"
+          src="images/image-product-2.jpg"
+          alt=""
+          onclick="showImage(this.src)"
+        />
+
+        <img
+          class="image-product3"
+          src="images/image-product-3.jpg"
+          alt=""
+          onclick="showImage(this.src)"
+        />
+        <img
+          class="image-product4"
+          src="images/image-product-4.jpg"
+          alt=""
+          onclick="showImage(this.src)"
+        />
+      </div>
+    </section>
+
+    <script src="Ecommerce.js"></script>
+
+    <script>
+      let mainImage = document.querySelector(".image-product-1");
+      function showImage(pic) {
+        mainImage.src = pic;
+      }
+    </script>
+  </body>
+</html>
