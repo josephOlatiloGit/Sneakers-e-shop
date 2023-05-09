@@ -49,6 +49,26 @@ close.onclick = function () {
   return nav.classList.toggle("active");
 };
 
+const cart = document.querySelector(".cart-icon");
+console.log(cart);
+const cartMobile = document.querySelector(".cart-top");
+console.log(cartMobile);
+const cartItem = document.getElementById("cartbox");
+console.log(cartItem);
+const windows = document.querySelector(".windows");
+
+cart.onclick = function () {
+  cartItem.classList.toggle("active");
+};
+
+cartMobile.onclick = function () {
+  cartItem.classList.toggle("active");
+};
+
+// windows.onscroll = () => {
+//   cartItem.classList.remove("active");
+// };
+
 // (function () {
 //   const mainImage = document.querySelectorAll(".img-thumbnail");
 //   const btn = document.querySelectorAll(".btns");
