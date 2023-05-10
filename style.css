@@ -156,12 +156,17 @@ header {
   background-color: #f1f1f1;
 }
 
-.image-product-1 {
+#slide {
+  display: none;
+}
+
+.Desk-image-product-1 {
   width: 35%;
   height: 45%;
   position: relative;
   top: -16px;
   margin: 120px;
+
   border-radius: 10px;
 }
 
@@ -340,6 +345,13 @@ img.cart-top {
   display: none;
 }
 
+.slide.image-product-1,
+.slide.image-product-2,
+.slide.image-product-3,
+.slide.image-product-4 {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   html,
   body {
@@ -349,7 +361,9 @@ img.cart-top {
     padding: 0;
     overflow-x: hidden;
   }
-
+  .Desk-image-product-1 {
+    display: none;
+  }
   header {
     position: relative;
     /* width: 100%; */
@@ -364,15 +378,22 @@ img.cart-top {
     flex-direction: column;
     align-items: center;
   }
-  .image-product-1 {
-    overflow-x: hidden;
-    display: inline;
+  #slide {
+    display: block;
+  }
+
+  .slide.image-product-1,
+  .slide.image-product-2,
+  .slide.image-product-3,
+  .slide.image-product-4 {
+    /* display: block; (Why the JS will not work; if the clast list has a style of Display:block)*/
     margin-top: -80px;
     height: 290px;
     width: 494px;
     border-radius: 0;
     z-index: -1;
   }
+
   a {
     display: none;
   }
@@ -584,11 +605,11 @@ img.cart-top {
   }
   .btns {
     position: absolute;
-    /* display: block; */
+    display: block;
   }
   .btn-prev {
     position: absolute;
-    top: 40px;
+    top: 42px;
     left: 15px;
     cursor: pointer;
   }

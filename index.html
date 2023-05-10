@@ -61,7 +61,34 @@
       <div class="outline"></div>
     </header>
     <section class="first">
-      <img class="image-product-1" src="images/image-product-1.jpg" alt="" />
+      <img
+        class="Desk-image-product-1"
+        src="images/image-product-1.jpg"
+        alt=""
+      />
+      <div id="slide" class="imageslide">
+        <img
+          class="slide image-product-1"
+          src="images/image-product-1.jpg"
+          alt=""
+        />
+        <img
+          class="slide image-product-2"
+          src="images/image-product-2.jpg"
+          alt=""
+        />
+        <img
+          class="slide image-product-3"
+          src="images/image-product-3.jpg"
+          alt=""
+        />
+        <img
+          class="slide image-product-4"
+          src="images/image-product-4.jpg"
+          alt=""
+        />
+      </div>
+
       <div class="btns">
         <img class="btn-prev" src="images/icon-previous.svg" alt="" />
         <img class="btn-next" src="images/icon-next.svg" alt="" />
@@ -134,7 +161,7 @@
     <script src="Ecommerce.js"></script>
 
     <script>
-      let mainImage = document.querySelector(".image-product-1");
+      let mainImage = document.querySelector(".Desk-image-product-1");
       function showImage(pic) {
         mainImage.src = pic;
       }

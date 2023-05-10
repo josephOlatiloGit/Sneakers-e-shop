@@ -55,7 +55,7 @@ const cartMobile = document.querySelector(".cart-top");
 console.log(cartMobile);
 const cartItem = document.getElementById("cartbox");
 console.log(cartItem);
-const windows = document.querySelector(".windows");
+// const windows = document.querySelector(".windows");
 
 cart.onclick = function () {
   cartItem.classList.toggle("active");
@@ -64,6 +64,52 @@ cart.onclick = function () {
 cartMobile.onclick = function () {
   cartItem.classList.toggle("active");
 };
+
+let sliderImages = document.querySelectorAll(".slide");
+let arrowRight = document.querySelector(".btn-next"),
+  arrowLeft = document.querySelector(".btn-prev"),
+  current = 0;
+
+function reset() {
+  // for (let i = 0; i < sliderImages.lenght; i++) {
+  //   sliderImages[i].style.display = "none";
+  // }
+  sliderImages.forEach((item) => {
+    item.style.display = "none";
+  });
+}
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+arrowLeft.addEventListener("click", function (e) {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+  e.preventDefault();
+});
+arrowRight.addEventListener("click", function (e) {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+  e.preventDefault();
+});
+startSlide();
 
 // windows.onscroll = () => {
 //   cartItem.classList.remove("active");
