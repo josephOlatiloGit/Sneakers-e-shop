@@ -608,9 +608,8 @@ img.cart-top {
   }
 
   .cartbox {
-    overflow-x: hidden;
     display: inline-block;
-    width: 350px;
+    width: 320px;
     height: 250px;
     border: 1px solid transparent;
     box-shadow: 8px, 20px, 55px, rgba(43, 42, 42, 0.6);
