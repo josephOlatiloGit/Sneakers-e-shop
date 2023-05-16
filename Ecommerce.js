@@ -72,7 +72,7 @@ let arrowRight = document.querySelector(".btn-next"),
 
 function reset() {
   // for (let i = 0; i < sliderImages.lenght; i++) {
-  //   sliderImages[i].style.display = "none";
+  //   sliderImages.style.display = "none";
   // }
   sliderImages.forEach((item) => {
     item.style.display = "none";

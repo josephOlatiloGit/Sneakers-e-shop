@@ -75,6 +75,17 @@ header {
   opacity: 80%;
 }
 
+.cart-value {
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 2px 5px;
+  color: #f1f1f1;
+  position: absolute;
+  right: 155px;
+  top: 15px;
+}
+
 .cartbox {
   width: 260px;
   height: 200px;
@@ -388,10 +399,11 @@ img.cart-top {
   .slide.image-product-4 {
     /* display: block; (Why the JS will not work; if the clast list has a style of Display:block)*/
     margin-top: -80px;
-    height: 290px;
-    width: 494px;
+    height: 299px;
+    width: 100vw;
     border-radius: 0;
     z-index: -1;
+    margin-bottom: 10px;
   }
 
   a {
@@ -412,12 +424,23 @@ img.cart-top {
     left: 10px;
     top: 10px;
   }
+
+  .cart-value {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 2px 5px;
+    color: #f1f1f1;
+    position: absolute;
+    right: 48px;
+    top: -10px;
+  }
   img.cart-top {
     display: block;
     position: absolute;
     transition: 0.43s ease;
     right: 52px;
-    top: 8px;
+    top: 10px;
   }
   img.cart-top:hover {
     opacity: 80%;
@@ -461,7 +484,7 @@ img.cart-top {
 
   p.hero {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 25px;
     /* z-index: -1; */
   }
 
@@ -609,14 +632,14 @@ img.cart-top {
   }
   .btn-prev {
     position: absolute;
-    top: 42px;
+    top: 50px;
     left: 15px;
     cursor: pointer;
   }
   .btn-next {
     position: absolute;
     right: 15px;
-    top: 40px;
+    top: 50px;
     cursor: pointer;
   }
   .btn-prev:hover {
